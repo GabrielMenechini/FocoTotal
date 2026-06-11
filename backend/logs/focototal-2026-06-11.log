@@ -1,0 +1,19 @@
+{"timestamp":"2026-06-11T18:20:43.887Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-11T18:20:43.895Z","nivel":"ERRO","mensagem":"Falha ao conectar com banco de dados","dados":""}
+{"timestamp":"2026-06-11T18:21:47.249Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-11T18:21:47.272Z","nivel":"ERRO","mensagem":"Falha ao conectar com banco de dados","dados":"Access denied for user 'root'@'localhost' (using password: YES)"}
+{"timestamp":"2026-06-11T18:23:13.775Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-11T18:23:13.798Z","nivel":"ERRO","mensagem":"Falha ao conectar com banco de dados","dados":"Access denied for user 'root'@'localhost' (using password: YES)"}
+{"timestamp":"2026-06-11T18:23:41.147Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-11T18:23:41.170Z","nivel":"ERRO","mensagem":"Falha ao conectar com banco de dados","dados":"Access denied for user 'root'@'localhost' (using password: YES)"}
+{"timestamp":"2026-06-11T18:31:49.734Z","nivel":"ERRO","mensagem":"Erro no login","dados":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'root'@'localhost' (using password: YES)"}}
+{"timestamp":"2026-06-11T18:50:37.285Z","nivel":"ERRO","mensagem":"Erro no login","dados":{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","sqlMessage":"Access denied for user 'root'@'localhost' (using password: YES)"}}
+{"timestamp":"2026-06-11T18:52:14.135Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-11T18:52:14.157Z","nivel":"ERRO","mensagem":"Falha ao conectar com banco de dados","dados":"Access denied for user 'root'@'localhost' (using password: YES)"}
+{"timestamp":"2026-06-11T18:53:26.619Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-11T18:53:26.641Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-11T18:53:30.867Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":1,"cargo":"admin"}}
+{"timestamp":"2026-06-11T19:05:51.402Z","nivel":"INFO","mensagem":"Venda criada","dados":{"vendaId":1,"valor_final":85,"itens":1}}
+{"timestamp":"2026-06-11T19:26:44.160Z","nivel":"INFO","mensagem":"Produto atualizado","dados":{"produtoId":"9"}}
+{"timestamp":"2026-06-11T19:26:50.934Z","nivel":"INFO","mensagem":"Produto atualizado","dados":{"produtoId":"9"}}
+{"timestamp":"2026-06-11T19:29:20.240Z","nivel":"INFO","mensagem":"Movimentação de estoque registrada","dados":{"tipo":"entrada","produto_id":9,"quantidade":2}}
