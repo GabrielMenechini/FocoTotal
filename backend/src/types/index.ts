@@ -3,7 +3,7 @@ export interface Usuario {
   nome: string;
   email: string;
   senha: string;
-  cargo: 'admin' | 'vendedor' | 'estoquista';
+  cargo: 'admin';
   ativo: boolean;
   criado_em?: Date;
 }
@@ -73,4 +73,20 @@ export interface JwtPayload {
   id: number;
   nome: string;
   cargo: string;
+}
+
+export interface Despesa {
+  id?: number;
+  tipo: 'compra_estoque' | 'despesa_administrativa' | 'pagamento_fornecedor' | 'outro';
+  categoria: string;
+  descricao?: string;
+  fornecedor?: string;
+  produto_id?: number;
+  quantidade: number;
+  valor_unitario: number;
+  valor_total: number;
+  data_competencia: string;
+  usuario_id: number;
+  observacoes?: string;
+  criado_em?: Date;
 }

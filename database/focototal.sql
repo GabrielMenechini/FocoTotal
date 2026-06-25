@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
   nome        VARCHAR(100) NOT NULL,
   email       VARCHAR(150) NOT NULL UNIQUE,
   senha       VARCHAR(255) NOT NULL,             -- bcrypt hash
-  cargo       ENUM('admin','vendedor','estoquista') NOT NULL DEFAULT 'vendedor',
+  cargo       ENUM('admin') NOT NULL DEFAULT 'admin',
   ativo       TINYINT(1) NOT NULL DEFAULT 1,
   criado_em   DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   INDEX idx_email (email),
@@ -120,6 +120,33 @@ CREATE TABLE IF NOT EXISTS movimentacoes_estoque (
   INDEX idx_criado_em (criado_em)
 ) ENGINE=InnoDB;
 
+-- -----------------------------------------------------------------
+-- DESPESAS DA EMPRESA
+-- -----------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS despesas (
+  id               INT AUTO_INCREMENT PRIMARY KEY,
+  tipo             ENUM('compra_estoque','despesa_administrativa','pagamento_fornecedor','outro')
+                   NOT NULL DEFAULT 'compra_estoque',
+  categoria        VARCHAR(80) NOT NULL,
+  descricao        TEXT,
+  fornecedor       VARCHAR(150),
+  produto_id       INT DEFAULT NULL,
+  quantidade       DECIMAL(10,2) NOT NULL DEFAULT 1,
+  valor_unitario   DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+  valor_total      DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+  data_competencia DATE NOT NULL,
+  usuario_id       INT NOT NULL,
+  observacoes      TEXT,
+  criado_em        DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+  FOREIGN KEY (produto_id) REFERENCES produtos(id) ON DELETE SET NULL,
+  INDEX idx_tipo        (tipo),
+  INDEX idx_categoria   (categoria),
+  INDEX idx_data        (data_competencia),
+  INDEX idx_usuario     (usuario_id),
+  INDEX idx_criado_em   (criado_em)
+) ENGINE=InnoDB;
+
 -- =================================================================
 -- DADOS INICIAIS
 -- =================================================================
@@ -135,15 +162,7 @@ INSERT INTO usuarios (nome, email, senha, cargo) VALUES
 --   node -e "const b=require('bcryptjs');b.hash('admin123',10).then(h=>console.log(h))"
 -- E substitua o valor acima.
 
--- Usuário vendedor
-INSERT INTO usuarios (nome, email, senha, cargo) VALUES
-('Maria Vendedora', 'maria@focototal.com',
- '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'vendedor');
-
--- Usuário estoquista
-INSERT INTO usuarios (nome, email, senha, cargo) VALUES
-('João Estoquista', 'joao@focototal.com',
- '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'estoquista');
+-- Todos os usuários são administradores. Não existem mais perfis vendedor/estoquista.
 
 -- Produtos de exemplo
 INSERT INTO produtos (codigo, nome, categoria, preco_custo, preco_venda, quantidade_estoque, estoque_minimo) VALUES

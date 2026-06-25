@@ -17,3 +17,5 @@
 {"timestamp":"2026-06-11T19:26:44.160Z","nivel":"INFO","mensagem":"Produto atualizado","dados":{"produtoId":"9"}}
 {"timestamp":"2026-06-11T19:26:50.934Z","nivel":"INFO","mensagem":"Produto atualizado","dados":{"produtoId":"9"}}
 {"timestamp":"2026-06-11T19:29:20.240Z","nivel":"INFO","mensagem":"Movimentação de estoque registrada","dados":{"tipo":"entrada","produto_id":9,"quantidade":2}}
+{"timestamp":"2026-06-11T22:56:02.984Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-11T22:56:03.011Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}

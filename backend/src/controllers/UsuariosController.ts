@@ -33,8 +33,8 @@ export class UsuariosController {
         res.status(400).json({ erro: 'Email inválido' });
         return;
       }
-      if (!['admin', 'vendedor', 'estoquista'].includes(cargo)) {
-        res.status(400).json({ erro: 'Cargo inválido' });
+      if (cargo !== 'admin') {
+        res.status(400).json({ erro: 'Cargo inválido. Apenas administrador é permitido.' });
         return;
       }
       if (String(senha).length < 6) {
@@ -66,14 +66,14 @@ export class UsuariosController {
 
   static async atualizar(req: Request, res: Response): Promise<void> {
     try {
-      const { nome, cargo, ativo } = req.body;
+      const { nome, ativo } = req.body;
       if (!ValidatorService.campoObrigatorio(nome)) {
         res.status(400).json({ erro: 'Nome é obrigatório' });
         return;
       }
       const [result] = await db.query(
-        'UPDATE usuarios SET nome=?, cargo=?, ativo=? WHERE id=?',
-        [nome, cargo, ativo ? 1 : 0, req.params.id]
+        'UPDATE usuarios SET nome=?, cargo=\'admin\', ativo=? WHERE id=?',
+        [nome, ativo ? 1 : 0, req.params.id]
       );
       const r = result as any;
       if (r.affectedRows === 0) {

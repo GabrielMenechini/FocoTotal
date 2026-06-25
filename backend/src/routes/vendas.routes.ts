@@ -4,8 +4,11 @@ import { autenticar } from '../middlewares/auth';
 
 const router = Router();
 router.use(autenticar);
-router.get('/', VendasController.listar);
-router.get('/:id', VendasController.buscarPorId);
-router.post('/', VendasController.criar);
+
+router.get ('/',              VendasController.listar);
+router.get ('/:id',           VendasController.buscarPorId);
+router.post('/',              VendasController.criar);
+router.put ('/:id',           VendasController.editar);
 router.patch('/:id/cancelar', VendasController.cancelar);
+
 export default router;

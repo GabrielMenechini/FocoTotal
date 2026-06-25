@@ -4,6 +4,7 @@ import { useAuth } from './contexts/AuthContext';
 import Layout from './components/Layout';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import Caixa from './pages/Caixa';
 import Produtos from './pages/Produtos';
 import Clientes from './pages/Clientes';
 import Vendas from './pages/Vendas';
@@ -30,13 +31,14 @@ const App: React.FC = () => {
           </PrivateRoute>
         }
       >
-        <Route index element={<Dashboard />} />
+        <Route index          element={<Dashboard />} />
+        <Route path="caixa"   element={<Caixa />} />
         <Route path="produtos" element={<Produtos />} />
         <Route path="clientes" element={<Clientes />} />
-        <Route path="vendas" element={<Vendas />} />
-        <Route path="estoque" element={<Estoque />} />
+        <Route path="vendas"   element={<Vendas />} />
+        <Route path="estoque"  element={<Estoque />} />
         <Route path="relatorios" element={<Relatorios />} />
-        <Route path="usuarios" element={<Usuarios />} />
+        <Route path="usuarios"   element={<Usuarios />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

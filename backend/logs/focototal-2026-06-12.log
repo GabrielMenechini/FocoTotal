@@ -1,0 +1,14 @@
+{"timestamp":"2026-06-12T00:26:56.978Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":1,"cargo":"admin"}}
+{"timestamp":"2026-06-12T00:27:44.126Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":2,"cargo":"vendedor"}}
+{"timestamp":"2026-06-12T00:28:40.927Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":3,"cargo":"estoquista"}}
+{"timestamp":"2026-06-12T00:29:12.707Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":1,"cargo":"admin"}}
+{"timestamp":"2026-06-12T00:30:21.651Z","nivel":"INFO","mensagem":"Cliente atualizado","dados":{"clienteId":"3"}}
+{"timestamp":"2026-06-12T00:31:40.630Z","nivel":"INFO","mensagem":"Venda criada","dados":{"vendaId":2,"valor_final":8,"itens":1}}
+{"timestamp":"2026-06-12T01:23:07.403Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":1,"cargo":"admin"}}
+{"timestamp":"2026-06-12T01:28:26.702Z","nivel":"INFO","mensagem":"Movimentação de estoque registrada","dados":{"tipo":"entrada","produto_id":10,"quantidade":1}}
+{"timestamp":"2026-06-12T16:43:22.413Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-12T16:43:22.442Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-12T16:43:59.628Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":1,"cargo":"admin"}}
+{"timestamp":"2026-06-12T16:45:59.197Z","nivel":"INFO","mensagem":"Produto criado","dados":{"produtoId":11,"codigo":"test"}}
+{"timestamp":"2026-06-12T16:47:17.666Z","nivel":"INFO","mensagem":"Movimentação de estoque registrada","dados":{"tipo":"entrada","produto_id":11,"quantidade":1}}
+{"timestamp":"2026-06-12T16:53:31.960Z","nivel":"INFO","mensagem":"Venda criada","dados":{"vendaId":3,"valor_final":40,"itens":1}}

@@ -1,0 +1,6 @@
+{"timestamp":"2026-06-23T14:17:54.738Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-23T14:17:54.778Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-23T14:23:20.629Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":1,"cargo":"admin"}}
+{"timestamp":"2026-06-23T23:40:33.485Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-23T23:40:33.519Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-23T23:41:34.762Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":1,"cargo":"admin"}}
