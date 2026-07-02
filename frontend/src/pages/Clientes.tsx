@@ -29,11 +29,19 @@ const Clientes: React.FC = () => {
 
   const validar = (): boolean => {
     const e: Record<string, string> = {};
-    if (!validators.obrigatorio(editando.nome)) e.nome = 'Obrigatório';
-    if (!validators.obrigatorio(editando.telefone)) e.telefone = 'Obrigatório';
-    if (editando.cpf && !validators.cpf(editando.cpf)) e.cpf = 'CPF inválido';
+    if (!validators.obrigatorio(editando.nome)) e.nome = 'Nome é obrigatório';
+    if (!validators.obrigatorio(editando.telefone)) e.telefone = 'Telefone é obrigatório';
+    if (!validators.obrigatorio(editando.cpf)) {
+      e.cpf = 'CPF é obrigatório';
+    } else if (!validators.cpf(editando.cpf!)) {
+      e.cpf = 'CPF inválido';
+    }
+    if (!validators.obrigatorio(editando.email)) {
+      e.email = 'E-mail é obrigatório';
+    } else if (!validators.email(editando.email!)) {
+      e.email = 'E-mail inválido';
+    }
     if (editando.cnpj && !validators.cnpj(editando.cnpj)) e.cnpj = 'CNPJ inválido';
-    if (editando.email && !validators.email(editando.email)) e.email = 'Email inválido';
     setErros(e);
     return Object.keys(e).length === 0;
   };
@@ -123,7 +131,7 @@ const Clientes: React.FC = () => {
                   {erros.nome && <span className="field-error">{erros.nome}</span>}
                 </div>
                 <div className="form-group">
-                  <label>CPF</label>
+                  <label>CPF *</label>
                   <input value={editando.cpf || ''}
                     onChange={e => set('cpf', masks.cpf(e.target.value))}
                     placeholder="000.000.000-00" className={erros.cpf ? 'error' : ''} maxLength={14} />
@@ -137,7 +145,7 @@ const Clientes: React.FC = () => {
                   {erros.cnpj && <span className="field-error">{erros.cnpj}</span>}
                 </div>
                 <div className="form-group">
-                  <label>Email</label>
+                  <label>E-mail *</label>
                   <input type="email" value={editando.email || ''} onChange={e => set('email', e.target.value)} className={erros.email ? 'error' : ''} />
                   {erros.email && <span className="field-error">{erros.email}</span>}
                 </div>

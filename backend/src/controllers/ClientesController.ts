@@ -44,20 +44,32 @@ export class ClientesController {
     try {
       const { nome, cpf, cnpj, email, telefone, cep, endereco, cidade, estado } = req.body;
 
-      if (!ValidatorService.campoObrigatorio(nome) || !ValidatorService.campoObrigatorio(telefone)) {
-        res.status(400).json({ erro: 'Nome e telefone são obrigatórios' });
+      if (!ValidatorService.campoObrigatorio(nome)) {
+        res.status(400).json({ erro: 'Nome é obrigatório' });
         return;
       }
-      if (cpf && !ValidatorService.validarCPF(cpf)) {
+      if (!ValidatorService.campoObrigatorio(telefone)) {
+        res.status(400).json({ erro: 'Telefone é obrigatório' });
+        return;
+      }
+      if (!ValidatorService.campoObrigatorio(cpf)) {
+        res.status(400).json({ erro: 'CPF é obrigatório' });
+        return;
+      }
+      if (!ValidatorService.validarCPF(cpf)) {
         res.status(400).json({ erro: 'CPF inválido' });
+        return;
+      }
+      if (!ValidatorService.campoObrigatorio(email)) {
+        res.status(400).json({ erro: 'E-mail é obrigatório' });
+        return;
+      }
+      if (!ValidatorService.validarEmail(email)) {
+        res.status(400).json({ erro: 'E-mail inválido' });
         return;
       }
       if (cnpj && !ValidatorService.validarCNPJ(cnpj)) {
         res.status(400).json({ erro: 'CNPJ inválido' });
-        return;
-      }
-      if (email && !ValidatorService.validarEmail(email)) {
-        res.status(400).json({ erro: 'Email inválido' });
         return;
       }
 
@@ -97,16 +109,28 @@ export class ClientesController {
         res.status(400).json({ erro: 'Nome é obrigatório' });
         return;
       }
-      if (cpf && !ValidatorService.validarCPF(cpf)) {
+      if (!ValidatorService.campoObrigatorio(telefone)) {
+        res.status(400).json({ erro: 'Telefone é obrigatório' });
+        return;
+      }
+      if (!ValidatorService.campoObrigatorio(cpf)) {
+        res.status(400).json({ erro: 'CPF é obrigatório' });
+        return;
+      }
+      if (!ValidatorService.validarCPF(cpf)) {
         res.status(400).json({ erro: 'CPF inválido' });
+        return;
+      }
+      if (!ValidatorService.campoObrigatorio(email)) {
+        res.status(400).json({ erro: 'E-mail é obrigatório' });
+        return;
+      }
+      if (!ValidatorService.validarEmail(email)) {
+        res.status(400).json({ erro: 'E-mail inválido' });
         return;
       }
       if (cnpj && !ValidatorService.validarCNPJ(cnpj)) {
         res.status(400).json({ erro: 'CNPJ inválido' });
-        return;
-      }
-      if (email && !ValidatorService.validarEmail(email)) {
-        res.status(400).json({ erro: 'Email inválido' });
         return;
       }
 

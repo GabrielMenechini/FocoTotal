@@ -5,7 +5,7 @@
  */
 import request from 'supertest';
 import jwt from 'jsonwebtoken';
-import app from '../src/server';
+import app from '../src/app';
 
 // Mock do banco de dados (evita precisar de MySQL rodando nos testes)
 jest.mock('../src/database', () => ({
@@ -20,10 +20,13 @@ jest.mock('../src/utils/logger', () => ({
 
 const mockDb = require('../src/database');
 
+// Garante que o JWT_SECRET nos testes bate com o usado pelo middleware
+const TEST_SECRET = 'focototal_secret';
+
 // Token JWT de Admin para autenticação nos testes
 const tokenAdmin = jwt.sign(
   { id: 1, nome: 'Admin Teste', cargo: 'admin' },
-  'focototal_secret'
+  TEST_SECRET
 );
 
 const produtoMock = {
@@ -37,6 +40,11 @@ const produtoMock = {
   estoque_minimo: 5,
   ativo: 1,
 };
+
+beforeAll(() => {
+  // Garante que o middleware de autenticação usa o mesmo segredo do teste
+  process.env.JWT_SECRET = TEST_SECRET;
+});
 
 describe('Produtos API – Testes de Integração', () => {
   beforeEach(() => jest.clearAllMocks());

@@ -1,0 +1,26 @@
+{"timestamp":"2026-06-26T23:10:37.902Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-26T23:10:37.936Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-26T23:11:12.784Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":1,"cargo":"admin"}}
+{"timestamp":"2026-06-26T23:11:12.883Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-26T23:11:12.885Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-26T23:11:12.894Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-26T23:11:12.896Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-26T23:13:00.355Z","nivel":"INFO","mensagem":"Venda criada","dados":{"vendaId":22,"valor_final":8,"itens":1}}
+{"timestamp":"2026-06-26T23:14:08.396Z","nivel":"INFO","mensagem":"Movimentação de estoque registrada","dados":{"tipo":"entrada","produto_id":2,"quantidade":4}}
+{"timestamp":"2026-06-26T23:15:53.706Z","nivel":"INFO","mensagem":"Cliente criado","dados":{"clienteId":6,"nome":"Goku"}}
+{"timestamp":"2026-06-26T23:16:35.926Z","nivel":"INFO","mensagem":"Cliente criado","dados":{"clienteId":7,"nome":"Vegeta"}}
+{"timestamp":"2026-06-26T23:16:57.749Z","nivel":"INFO","mensagem":"Venda criada","dados":{"vendaId":23,"valor_final":125,"itens":2}}
+{"timestamp":"2026-06-26T23:23:15.596Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-26T23:23:15.625Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-26T23:24:00.221Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-26T23:24:00.246Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-26T23:24:07.601Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-26T23:24:07.627Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-26T23:28:57.405Z","nivel":"INFO","mensagem":"Cliente criado","dados":{"clienteId":8,"nome":"Freeza"}}
+{"timestamp":"2026-06-26T23:30:01.406Z","nivel":"INFO","mensagem":"Venda criada","dados":{"vendaId":24,"valor_final":276,"itens":2}}
+{"timestamp":"2026-06-26T23:30:14.305Z","nivel":"INFO","mensagem":"Cliente desativado","dados":{"clienteId":"6"}}
+{"timestamp":"2026-06-26T23:30:24.932Z","nivel":"INFO","mensagem":"Cliente desativado","dados":{"clienteId":"7"}}
+{"timestamp":"2026-06-26T23:30:26.944Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-26T23:30:26.949Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-26T23:30:26.959Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-26T23:30:26.960Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}

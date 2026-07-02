@@ -1,0 +1,19 @@
+{"timestamp":"2026-06-27T00:57:31.295Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-27T00:57:31.327Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-27T00:58:28.549Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T00:58:28.552Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T00:58:28.563Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T00:58:28.565Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T01:09:44.648Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T01:09:44.650Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T01:09:44.663Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T01:09:44.667Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T01:11:52.182Z","nivel":"INFO","mensagem":"Produto criado","dados":{"produtoId":12,"codigo":"ARM09"}}
+{"timestamp":"2026-06-27T01:12:54.114Z","nivel":"INFO","mensagem":"Venda criada","dados":{"vendaId":25,"valor_final":130,"itens":1}}
+{"timestamp":"2026-06-27T01:14:25.296Z","nivel":"INFO","mensagem":"Venda cancelada","dados":{"vendaId":"25"}}
+{"timestamp":"2026-06-27T01:17:13.841Z","nivel":"INFO","mensagem":"Cliente criado","dados":{"clienteId":9,"nome":"Majin Boo"}}
+{"timestamp":"2026-06-27T01:17:28.367Z","nivel":"INFO","mensagem":"Venda criada","dados":{"vendaId":26,"valor_final":128,"itens":3}}
+{"timestamp":"2026-06-27T01:20:18.029Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T01:20:18.031Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T01:20:18.044Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-27T01:20:18.046Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}

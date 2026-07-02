@@ -1,0 +1,20 @@
+{"timestamp":"2026-06-30T16:41:01.029Z","nivel":"INFO","mensagem":"Servidor FocoTotal iniciado na porta 3001","dados":null}
+{"timestamp":"2026-06-30T16:41:01.061Z","nivel":"INFO","mensagem":"Banco de dados conectado com sucesso","dados":null}
+{"timestamp":"2026-06-30T16:41:30.460Z","nivel":"INFO","mensagem":"Login realizado","dados":{"usuarioId":1,"cargo":"admin"}}
+{"timestamp":"2026-06-30T16:41:30.589Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:41:30.591Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:41:30.600Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:41:30.602Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:42:11.900Z","nivel":"INFO","mensagem":"Produto desativado","dados":{"produtoId":"11"}}
+{"timestamp":"2026-06-30T16:43:07.427Z","nivel":"INFO","mensagem":"Movimentação de estoque registrada","dados":{"tipo":"entrada","produto_id":12,"quantidade":5}}
+{"timestamp":"2026-06-30T16:43:15.931Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:43:15.932Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:43:15.939Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:43:15.940Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:43:55.256Z","nivel":"INFO","mensagem":"Movimentação de estoque registrada","dados":{"tipo":"entrada","produto_id":1,"quantidade":5}}
+{"timestamp":"2026-06-30T16:46:41.523Z","nivel":"INFO","mensagem":"Cliente criado","dados":{"clienteId":10,"nome":"Ricardo Ohara Silva"}}
+{"timestamp":"2026-06-30T16:51:05.474Z","nivel":"INFO","mensagem":"Venda criada","dados":{"vendaId":27,"valor_final":188,"itens":4}}
+{"timestamp":"2026-06-30T16:56:25.007Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:56:25.048Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:56:25.176Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'atual' not supported (reference to group function)","dados":null}
+{"timestamp":"2026-06-30T16:56:25.177Z","nivel":"ERRO","mensagem":"[BI] query falhou: Reference 'anterior' not supported (reference to group function)","dados":null}
